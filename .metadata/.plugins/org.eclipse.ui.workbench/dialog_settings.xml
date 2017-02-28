@@ -5,8 +5,8 @@
 		<item value="399" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="1350" key="dialogHeight"/>
-		<item value="2400" key="dialogWidth"/>
+		<item value="1344" key="dialogHeight"/>
+		<item value="2394" key="dialogWidth"/>
 		<list key="textEntries">
 		</list>
 		<list key="orderedElements">
@@ -15,6 +15,13 @@
 		</list>
 		<list key="textArray">
 		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item value="798" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="800" key="DIALOG_HEIGHT"/>
+		<item value="-97" key="DIALOG_X_ORIGIN"/>
+		<item value="-325" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="ShowViewDialog">
 		<item value="378" key="DIALOG_WIDTH"/>

@@ -92,7 +92,6 @@ int main(int argc, char **argv) {
     pi(argc, argv);
 }
 
-
 // some hints here
 // http://stackoverflow.com/questions/11832202/cuda-random-number-generating
 //

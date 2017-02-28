@@ -104,3 +104,19 @@ Finished building target: monte
 19:35:49 **** Incremental Build of configuration Debug for project monte ****
 make all 
 make: Nothing to be done for 'all'.
+21:08:48 **** Build of configuration Debug for project monte ****
+make all 
+Building file: ../src/monte.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_60,code=sm_60  -odir "src" -M -o "src/monte.d" "../src/monte.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_60,code=compute_60 -gencode arch=compute_60,code=sm_60  -x cu -o  "src/monte.o" "../src/monte.cu"
+Finished building: ../src/monte.cu
+ 
+Building target: monte
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_60,code=compute_60 -gencode arch=compute_60,code=sm_60 -link -o  "monte"  ./src/monte.o   
+Finished building target: monte
+ 
+21:08:52 **** Incremental Build of configuration Debug for project monte ****
+make all 
+make: Nothing to be done for 'all'.
