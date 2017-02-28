@@ -120,3 +120,53 @@ Finished building target: monte
 21:08:52 **** Incremental Build of configuration Debug for project monte ****
 make all 
 make: Nothing to be done for 'all'.
+21:24:16 **** Incremental Build of configuration Debug for project monte ****
+make all 
+make: Nothing to be done for 'all'.
+21:24:20 **** Incremental Build of configuration Debug for project monte ****
+make all 
+Building file: ../src/monte.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_60,code=sm_60  -odir "src" -M -o "src/monte.d" "../src/monte.cu"
+../src/monte.cu:8:56: fatal error: helper_cuda.h: No such file or directory
+compilation terminated.
+src/subdir.mk:18: recipe for target 'src/monte.o' failed
+make: *** [src/monte.o] Error 1
+21:24:44 **** Incremental Build of configuration Debug for project monte ****
+make all 
+Building file: ../src/monte.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_60,code=sm_60  -odir "src" -M -o "src/monte.d" "../src/monte.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_60,code=compute_60 -gencode arch=compute_60,code=sm_60  -x cu -o  "src/monte.o" "../src/monte.cu"
+../src/monte.cu(82): error: identifier "findCudaDevice" is undefined
+
+1 error detected in the compilation of "/tmp/tmpxft_00006794_00000000-7_monte.cpp1.ii".
+src/subdir.mk:18: recipe for target 'src/monte.o' failed
+make: *** [src/monte.o] Error 2
+21:24:57 **** Incremental Build of configuration Debug for project monte ****
+make all 
+Building file: ../src/monte.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_60,code=sm_60  -odir "src" -M -o "src/monte.d" "../src/monte.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_60,code=compute_60 -gencode arch=compute_60,code=sm_60  -x cu -o  "src/monte.o" "../src/monte.cu"
+../src/monte.cu(80): error: identifier "printf" is undefined
+
+1 error detected in the compilation of "/tmp/tmpxft_000067ee_00000000-5_monte.cpp4.ii".
+make: *** [src/monte.o] Error 2
+src/subdir.mk:18: recipe for target 'src/monte.o' failed
+21:25:19 **** Incremental Build of configuration Debug for project monte ****
+make all 
+Building file: ../src/monte.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_60,code=sm_60  -odir "src" -M -o "src/monte.d" "../src/monte.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_60,code=compute_60 -gencode arch=compute_60,code=sm_60  -x cu -o  "src/monte.o" "../src/monte.cu"
+Finished building: ../src/monte.cu
+ 
+Building target: monte
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_60,code=compute_60 -gencode arch=compute_60,code=sm_60 -link -o  "monte"  ./src/monte.o   
+Finished building target: monte
+ 
+21:25:34 **** Incremental Build of configuration Debug for project monte ****
+make all 
+make: Nothing to be done for 'all'.
