@@ -1,0 +1,106 @@
+19:27:27 **** Build of configuration Debug for project monte ****
+make all 
+Building file: ../src/monte.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/monte.d" -MT"src/monte.d" -o "src/monte.o" "../src/monte.cpp"
+Finished building: ../src/monte.cpp
+ 
+Building target: monte
+Invoking: Cross G++ Linker
+g++  -o "monte"  ./src/monte.o   
+Finished building target: monte
+ 
+19:27:34 **** Incremental Build of configuration Debug for project monte ****
+make all 
+make: Nothing to be done for 'all'.
+19:29:25 **** Build of configuration Debug for project monte ****
+make all 
+Building file: ../src/monte.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/monte.d" -MT"src/monte.d" -o "src/monte.o" "../src/monte.cpp"
+Finished building: ../src/monte.cpp
+ 
+Building target: monte
+Invoking: Cross G++ Linker
+g++  -o "monte"  ./src/monte.o   
+Finished building target: monte
+ 
+19:29:33 **** Incremental Build of configuration Debug for project monte ****
+make all 
+make: Nothing to be done for 'all'.
+19:31:10 **** Build of configuration Debug for project monte ****
+make all 
+Building file: ../src/monte.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_60,code=sm_60  -odir "src" -M -o "src/monte.d" "../src/monte.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_60,code=compute_60 -gencode arch=compute_60,code=sm_60  -x cu -o  "src/monte.o" "../src/monte.cu"
+Finished building: ../src/monte.cu
+ 
+Building target: monte
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_60,code=compute_60 -gencode arch=compute_60,code=sm_60 -link -o  "monte"  ./src/monte.o   
+Finished building target: monte
+ 
+19:31:13 **** Incremental Build of configuration Debug for project monte ****
+make all 
+make: Nothing to be done for 'all'.
+19:32:28 **** Incremental Build of configuration Debug for project monte ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:30 **** Clean-only build of configuration Debug for project Sandbox ****
+make clean 
+rm -rf  ./src/Sandbox.o  ./src/Sandbox.d  Sandbox
+ 
+19:34:30 **** Clean-only build of configuration Debug for project monte ****
+make clean 
+rm -rf  ./src/monte.o  ./src/monte.d  monte
+ 
+19:34:32 **** Build of configuration Debug for project monte ****
+make all 
+Building file: ../src/monte.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_60,code=sm_60  -odir "src" -M -o "src/monte.d" "../src/monte.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_60,code=compute_60 -gencode arch=compute_60,code=sm_60  -x cu -o  "src/monte.o" "../src/monte.cu"
+Finished building: ../src/monte.cu
+ 
+Building target: monte
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_60,code=compute_60 -gencode arch=compute_60,code=sm_60 -link -o  "monte"  ./src/monte.o   
+Finished building target: monte
+ 
+19:34:43 **** Incremental Build of configuration Debug for project monte ****
+make all 
+Building file: ../src/monte.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_60,code=sm_60  -odir "src" -M -o "src/monte.d" "../src/monte.cu"
+../src/monte.cu:8:56: fatal error: helper_cuda.h: No such file or directory
+src/subdir.mk:18: recipe for target 'src/monte.o' failed
+compilation terminated.
+make: *** [src/monte.o] Error 1
+19:35:13 **** Incremental Build of configuration Debug for project monte ****
+make all 
+Building file: ../src/monte.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_60,code=sm_60  -odir "src" -M -o "src/monte.d" "../src/monte.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_60,code=compute_60 -gencode arch=compute_60,code=sm_60  -x cu -o  "src/monte.o" "../src/monte.cu"
+../src/monte.cu(46): error: identifier "printf" is undefined
+
+1 error detected in the compilation of "/tmp/tmpxft_00005a3f_00000000-5_monte.cpp4.ii".
+src/subdir.mk:18: recipe for target 'src/monte.o' failed
+make: *** [src/monte.o] Error 2
+19:35:44 **** Incremental Build of configuration Debug for project monte ****
+make all 
+Building file: ../src/monte.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 -gencode arch=compute_60,code=sm_60  -odir "src" -M -o "src/monte.d" "../src/monte.cu"
+/usr/local/cuda-8.0/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_60,code=compute_60 -gencode arch=compute_60,code=sm_60  -x cu -o  "src/monte.o" "../src/monte.cu"
+Finished building: ../src/monte.cu
+ 
+Building target: monte
+Invoking: NVCC Linker
+/usr/local/cuda-8.0/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_60,code=compute_60 -gencode arch=compute_60,code=sm_60 -link -o  "monte"  ./src/monte.o   
+Finished building target: monte
+ 
+19:35:49 **** Incremental Build of configuration Debug for project monte ****
+make all 
+make: Nothing to be done for 'all'.
