@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="true" key="CommitDialog.showUntracked"/>
-	<list key="CommitDialog.authorValues">
-		<item value="gbuffing &lt;gbuffing@gmail.com&gt;"/>
+	<item value="0" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/gbuffing/cuda-workspace"/>
 	</list>
-	<list key="CommitDialog.committerValues">
-		<item value="gbuffing &lt;gbuffing@gmail.com&gt;"/>
-	</list>
-	<section name="org.eclipse.egit.ui.COMMIT_DIALOG_SECTION">
-		<item value="839" key="DIALOG_WIDTH"/>
-		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="677" key="DIALOG_HEIGHT"/>
-		<item value="507" key="DIALOG_X_ORIGIN"/>
-		<item value="567" key="DIALOG_Y_ORIGIN"/>
-	</section>
-	<section name="GitCommitMessageComponent">
-	</section>
-	<section name="GitCommitSearchPage">
-		<item value="0" key="HISTORY_SIZE"/>
+	<section name="GitImportWizard">
+		<item value="true" key="GitProjectsImportPage.STORE_NESTED_PROJECTS"/>
 	</section>
 </section>

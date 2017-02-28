@@ -1,5 +1,5 @@
 ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc\tTorg.eclipse.cdt.ui.presentation\tTorg.eclipse.cdt.ui.CEditor.presentation
-ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.ui.workbench.texteditor.blockSelectionModeFont
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jface.textfont
 eclipse.preferences.version=1
 org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_END=255,255,255
 org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_START=255,255,255
@@ -18,5 +18,5 @@ org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.INACTIVE_TAB_OUT
 org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.INACTIVE_TAB_OUTLINE_COLOR=182,188,204
 org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.INACTIVE_UNSELECTED_TABS_COLOR_END=255,255,255
 org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.INACTIVE_UNSELECTED_TABS_COLOR_START=255,255,255
-org.eclipse.jface.textfont=1|Monospace|14.0|0|GTK|1|;
-org.eclipse.ui.workbench.texteditor.blockSelectionModeFont=1|Monospace|14.0|0|GTK|1|;
+org.eclipse.jface.textfont=1|Monospace|11.0|0|GTK|1|;
+org.eclipse.ui.workbench.texteditor.blockSelectionModeFont=1|Monospace|11.0|0|GTK|1|;

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="597" key="DIALOG_X_ORIGIN"/>
-		<item value="399" key="DIALOG_Y_ORIGIN"/>
+		<item value="-41" key="DIALOG_X_ORIGIN"/>
+		<item value="16" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="1344" key="dialogHeight"/>
-		<item value="2394" key="dialogWidth"/>
+		<item value="669" key="dialogHeight"/>
+		<item value="1194" key="dialogWidth"/>
 		<list key="textEntries">
 		</list>
 		<list key="orderedElements">
@@ -19,19 +19,14 @@
 	<section name="InstallationDialogSettings">
 		<item value="798" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="800" key="DIALOG_HEIGHT"/>
+		<item value="828" key="DIALOG_HEIGHT"/>
 		<item value="-97" key="DIALOG_X_ORIGIN"/>
-		<item value="-325" key="DIALOG_Y_ORIGIN"/>
+		<item value="-211" key="DIALOG_Y_ORIGIN"/>
 	</section>
-	<section name="ShowViewDialog">
-		<item value="378" key="DIALOG_WIDTH"/>
-		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="org.eclipse.egit.ui.RepositoriesView" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
-		<item value="443" key="DIALOG_HEIGHT"/>
-		<item value="740" key="DIALOG_X_ORIGIN"/>
-		<item value="723" key="DIALOG_Y_ORIGIN"/>
-		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.egit.ui.GitCategory"/>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.egit.ui.internal.clone.GitCloneWizard" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.egit.ui.internal.clone.gitclonecategory"/>
 		</list>
 	</section>
 </section>
