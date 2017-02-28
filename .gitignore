@@ -36,3 +36,8 @@
 ehthumbs.db
 Thumbs.db
 
+# Other #
+#########
+.meta*
+.meta*/.*
+
