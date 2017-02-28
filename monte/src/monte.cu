@@ -40,23 +40,62 @@ __global__ void monteThreads(curandState_t *states, int *throws, int *hits)  {
 	}
 }
 
+__global__ void init_random_threads_blocks(int seed, curandState_t *state)  {
+	int index = blockIdx.x * blockDim.x + threadIdx.x;
+    curand_init(seed, index, 0, &state[index]);
+}
+
+__global__ void init_monteThreadsBlocks(int *throws, int *hits)  {
+	int index = blockIdx.x * blockDim.x + threadIdx.x;
+	hits[index] = throws[index] = 0;
+}
+
+__global__ void monteThreadsBlocks(int n, curandState_t *states, int *throws, int *hits)  {
+	int index = blockIdx.x * blockDim.x + threadIdx.x;
+	int stride = blockDim.x * gridDim.x;
+	double x, y;
+	/*
+	x = curand_uniform_double(&states[index]);
+	y = curand_uniform_double(&states[index]);
+	throws[index]++;
+	if (sqrt(x*x + y*y) <= 1.)  {
+		hits[index]++;
+	}
+	*/
+
+	for (int i = index; i < n; i += stride)  {
+		x = curand_uniform_double(&states[i]);
+		y = curand_uniform_double(&states[i]);
+		throws[i]++;
+		if (sqrt(x*x + y*y) <= 1.)  {
+			hits[i]++;
+		}
+	}
+
+}
+
 /********************************* HOST CODE *********************************/
 
 void pi(int argc, char **argv)
 {
     printf("%s Starting...\n\n", argv[0]);
     // use command-line specified CUDA device, otherwise use device with highest Gflops/s
-//    int devID = findCudaDevice(argc, (const char **)argv);
+    //int devID = findCudaDevice(argc, (const char **)argv);
 
-    int n = 256 * 1024;
+
+    int n = 32 * 4 * 256;
     curandState_t *state;
     int state_size = n * sizeof(curandState_t);
     cudaMallocManaged(&state, state_size);
 
+    int blockSize = 256;
+    int numBlocks = (n + blockSize -1) / blockSize;
+
     unsigned int t = time(0);
     //t = 1234;
-    init_random_blocks<<<n,1>>>(t, state);
-//    init_random_threads<<<1,n>>>(t, state);
+//    init_random_blocks<<<n,1>>>(t, state);
+//    init_random_threads<<<numBlocks,blockSize>>>(t, state);
+    init_random_threads_blocks<<<numBlocks,blockSize>>>(t, state);
     cudaDeviceSynchronize();
 
     int size = n * sizeof(int);
@@ -65,11 +104,12 @@ void pi(int argc, char **argv)
     int *throws;
     cudaMallocManaged(&throws, size);
 
-    *hits = *throws = 0;
+    init_monteThreadsBlocks<<<numBlocks,blockSize>>>(throws, hits);
+    cudaDeviceSynchronize();
 
-    monteBlocks<<<n,1>>>(state, throws, hits);
-//      monteThreads<<<1,n>>>(state, throws, hits);
-
+//    monteBlocks<<<n,1>>>(state, throws, hits);
+//    monteThreads<<<1,n>>>(state, throws, hits);
+    monteThreadsBlocks<<<numBlocks,blockSize>>>(n, state, throws, hits);
     cudaDeviceSynchronize();
 
     int total_hits = 0;
@@ -91,7 +131,6 @@ void pi(int argc, char **argv)
 int main(int argc, char **argv) {
     pi(argc, argv);
 }
-
 
 // some hints here
 // http://stackoverflow.com/questions/11832202/cuda-random-number-generating
