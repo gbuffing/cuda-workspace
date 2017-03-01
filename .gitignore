@@ -38,7 +38,7 @@ Thumbs.db
 
 # Other #
 #########
-.metadata
+.metadata/
 .project
 .launch
 .cproject
