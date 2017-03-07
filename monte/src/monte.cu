@@ -83,7 +83,7 @@ void pi(int argc, char **argv)
     //print devID = findCudaDevice(argc, (const char **)argv);
 
 
-    int n = 32 * 4 * 256;
+    int n = 128 * 128 * 256;
     curandState_t *state;
     int state_size = n * sizeof(curandState_t);
     cudaMallocManaged(&state, state_size);
