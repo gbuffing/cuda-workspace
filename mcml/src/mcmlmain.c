@@ -209,5 +209,9 @@ char main(int argc, char *argv[])
   }
   
   fclose(input_file_ptr);
+
+  double a = sqrt(4.);
+
+
   return(0);
 }

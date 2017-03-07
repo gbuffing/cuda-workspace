@@ -6,6 +6,11 @@
 #include <string.h>
 #include <ctype.h>
 
+void tmp()  {
+	double a = sqrt(4.0);
+	printf("%f\n",a);
+}
+
 /***********************************************************
  *  Copyright Univ. of Texas M.D. Anderson Cancer Center
  *  1992.
