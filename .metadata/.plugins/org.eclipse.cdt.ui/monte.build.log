@@ -1,7 +1,0 @@
-21:07:28 **** Clean-only build of configuration Debug for project monte ****
-make clean 
-rm -rf  ./src/monte.o  ./src/monte.d  monte
- 
-
-21:07:28 Build Finished (took 60ms)
-

@@ -1,7 +1,0 @@
-21:07:27 **** Clean-only build of configuration Debug for project Sandbox ****
-make clean 
-rm -rf  ./src/Sandbox.o  ./src/Sandbox.d  Sandbox
- 
-
-21:07:28 Build Finished (took 77ms)
-
