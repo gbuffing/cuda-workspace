@@ -1,6 +1,8 @@
 ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc\tTorg.eclipse.cdt.ui.presentation\tTorg.eclipse.cdt.ui.CEditor.presentation
-ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jface.textfont
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.cdt.ui.buildconsole.ConsoleFont
 eclipse.preferences.version=1
+org.eclipse.cdt.ui.buildconsole.ConsoleFont=1|Monospace|12.0|0|GTK|1|;
+org.eclipse.cdt.ui.editors.textfont=1|Monospace|12.0|0|GTK|1|;
 org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_END=255,255,255
 org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_START=255,255,255
 org.eclipse.e4.ui.css.theme.e4_default.org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_TEXT_COLOR=0,0,0
